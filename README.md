@@ -16,6 +16,8 @@ Este endpoint devuelve un 200 OK, con el saludo correspondiente, por lo que no s
 
 ![SaludoPostman](https://github.com/user-attachments/assets/f1fd71ef-beba-44be-b270-b6176190786a)
 
+<hr/>
+
 
 ## http://localhost:8080/api/saludoNombre/Cristian
 Este endpoint devuelve un 200 OK, con el saludo correspondiente y el nombre "Cristian" que se pasa por @PathVariable, por lo que no se observa ningun problema tanto en Swagger como en Postman:
@@ -25,6 +27,8 @@ Este endpoint devuelve un 200 OK, con el saludo correspondiente y el nombre "Cri
 
 ![SaludoNombrePostman](https://github.com/user-attachments/assets/050909d4-51f3-4505-abd8-b0f656f6b786)
 
+<hr/>
+
 
 ## http://localhost:8080/api/saludoNombreApellido?nombre=Cristian&apellido=Gomez
 Este endpoint devuelve un 200 OK, con el saludo correspondiente, el nombre "Cristian" y el apellido "Gomez" que se pasa por @RequestParam, por lo que no se observa ningun problema tanto en Swagger como en Postman:
@@ -33,6 +37,8 @@ Este endpoint devuelve un 200 OK, con el saludo correspondiente, el nombre "Cris
 
 
 ![SaludoNombreApellidoPostman](https://github.com/user-attachments/assets/8fa56095-7065-4853-92b2-77fd54d980b1)
+
+<hr/>
 
 
 ## http://localhost:8080/api/enviarDatos
