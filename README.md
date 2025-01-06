@@ -2,7 +2,7 @@
 
 Actividad número 1.
 
-Usar este endpoint para testeo de endpoints mediante Swagger: http://localhost:8080/swagger-ui/index.html#/
+Usar este URL para testeo de endpoints mediante Swagger: http://localhost:8080/swagger-ui/index.html#/
 
 ![Controladores](https://github.com/user-attachments/assets/decb9e1e-c12c-4294-a137-bc2526aa2688)
 
