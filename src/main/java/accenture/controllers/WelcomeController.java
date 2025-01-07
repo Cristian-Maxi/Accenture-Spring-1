@@ -26,7 +26,7 @@ public class WelcomeController {
     public ResponseEntity<String> saludoConNombre(@PathVariable String nombre) {
         return new ResponseEntity<>("Bienvenido " + nombre, HttpStatus.OK);
     }
-    
+
     @GetMapping("/saludoNombreApellido")
     @Operation(summary = "Este Endpoint devuelve un nombre y apellido los cuales son pasados por query params", description = "Recibe un nombre y apellido y los devuelve en un saludo")
     public ResponseEntity<String> saludoNombreApellido(@RequestParam String nombre, String apellido) {
@@ -35,6 +35,10 @@ public class WelcomeController {
 
     @PostMapping("/enviarDatos")
     @Operation(summary = "En este endpoint el usuario envia un objeto con datos 'DTO' y luego se los devuelve", description = "Recibe datos y devuelve estos datos en un JSON")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Datos recibidos exitosamente."),
+            @ApiResponse(responseCode = "400", description = "Error en el envio de datos")
+    })
     public ResponseEntity<DatosRequest> enviarDatos(@Valid @RequestBody DatosRequest datosRequest) {
         return new ResponseEntity<>(datosRequest, HttpStatus.OK);
     }
